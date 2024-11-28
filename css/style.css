@@ -1,0 +1,33 @@
+.me-2 {
+    border-radius: 8px;
+    border-color: rgb(199, 193, 193);
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 50px;
+}
+
+.navbar {
+    background-color: #323c48 !important; /* Cor da navbar */
+    height: 130px; /* Define a altura da navbar */
+    padding: 10; /* Remove os paddings padrão */
+}
+
+.navbar-brand {
+    padding: 0; /* Remove o espaço à esquerda */
+    margin: 0; /* Remove margens adicionais */
+}
+
+.navbar-brand img {
+    height: 130px; /* Ajusta a altura da logo ao tamanho da navbar */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+.nav-link {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 100;
+}
+
