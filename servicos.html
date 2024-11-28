@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,6 +75,7 @@
     </style>
 </head>
 
+
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -104,19 +106,19 @@
                     <a class="nav-link" href="servicos.html">Serviços</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos</a>
+                    <a class="nav-link" href="produtos.html">Produtos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contato</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class=" me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit"><img src="img/lupa.svg" alt=""></button>
             </form>
         </div>
-        </div>
     </nav>
+
     <div class="container">
         <div class="header">
             <h1>NetByte - Soluções de Redes</h1>
@@ -170,34 +172,42 @@
                 <img src="img/servicos3.webp" alt="Serviço 3">
             </div>
         </div>
+
+        <!-- Formulário para envio de e-mails -->
+        <div class="mt-5">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="POST" class="row g-3">
+                <div class="col-md-6">
+                    <label for="emailUsuario" class="form-label">Seu E-mail</label>
+                    <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="tituloEmail" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="tituloEmail" name="tituloEmail" placeholder="Título do e-mail" required>
+                </div>
+                <div class="col-12">
+                    <label for="descricaoEmail" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="descricaoEmail" name="descricaoEmail" rows="5" placeholder="Descreva sua mensagem" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <section class="">
-        <!-- Footer -->
-        <footer class="text-center text-white" style="background-color: #0a4275;">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-            <!-- Section: CTA -->
-            <section class="">
-              <p class="d-flex justify-content-center align-items-center">
+
+    <footer class="text-center text-white" style="background-color: #0a4275;">
+        <div class="container p-4 pb-0">
+            <p class="d-flex justify-content-center align-items-center">
                 <span class="me-3">Registre-se de graça</span>
-                <button data-mdb-ripple-init type="button" class="btn btn-outline-light btn-rounded">
-                  Registrar!
-                </button>
-              </p>
-            </section>
-            <!-- Section: CTA -->
-          </div>
-          <!-- Grid container -->
-    
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <button type="button" class="btn btn-outline-light btn-rounded">Registrar!</button>
+            </p>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2024 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">NetByte Connect</a>
-          </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-      </section>
+            <a class="text-white" href="#">NetByte Connect</a>
+        </div>
+    </footer>
 </body>
 
 </html>
